@@ -1,13 +1,14 @@
 {
   "name": "00-dark-minimal-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "version": "1.0.0",
+  "description": "Atom 00 theme minimal dark material syntax",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "atom"
   ],
-  "repository": "https://github.com/atom/00-dark-minimal-syntax",
+  "repository": "https://github.com/charrismatic/00-dark-minimal-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

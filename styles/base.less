@@ -13,11 +13,12 @@ atom-text-editor {
 
     // TODO: BELONGS IN UI PACKAGE
     .line-number {
+      padding-left: 0.1em;
       background-color: @gutter_line_bg;
       color: @gutter_line_txt;
-      padding-left: 0.1em;
-      opacity: 1;
       letter-spacing: -0.05em;
+      opacity: 1;
+
       -webkit-font-smoothing: antialiased;
 
       &.cursor-line {
@@ -54,13 +55,9 @@ atom-text-editor {
   }
 
   //HIGHLIGHT SELECTION
-  .selection .region {
-    background: @syntax-selection-color;
-  }
+  .selection .region { background: @syntax-selection-color; }
+  &.is-focused .selection .region { background: @selection_has_focus_color; }
 
-  &.is-focused .selection .region {
-    background: @selection_has_focus_color;
-  }
 
   // BRACKET MATCHER
   .bracket-matcher .region {
@@ -106,11 +103,13 @@ atom-text-editor {
 }
 
 .syntax--invalid.syntax--illegal {
-  background-color: @red; color: @syntax-background-color;
+  background-color: @red;
+  color: @syntax-background-color;
 }
 
 // STRINGS
-.syntax--string { color: @dark_pastel_green;
+.syntax--string {
+  color: @dark_pastel_green;
 
   &.syntax--quoted {
     &.syntax--single.syntax--html,
